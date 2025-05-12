@@ -1,0 +1,32 @@
+{
+  "name": "jabeen_eram_server_risekitcapstone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+"scripts": {
+  "dev": "nodemon server.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eramjabeen1/Jabeen_Eram_Server_RiseKitCapstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eramjabeen1/Jabeen_Eram_Server_RiseKitCapstone/issues"
+  },
+  "homepage": "https://github.com/eramjabeen1/Jabeen_Eram_Server_RiseKitCapstone#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
