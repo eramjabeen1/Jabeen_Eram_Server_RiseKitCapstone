@@ -15,11 +15,21 @@ const journalEntrySchema = new mongoose.Schema({
     type: String,
     enum: ['happy', 'sad', 'anxious', 'motivated', 'tired', 'neutral'],
     default: 'neutral'
-  }
+  },
+
+ user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+ }
+
 }, {
   timestamps: true
 })
 
+
 const JournalEntry = mongoose.model('JournalEntry', journalEntrySchema)
+
+
 
 export default JournalEntry

@@ -40,3 +40,29 @@ export const registerUser = async (req, res) => {
     res.status(400).json({ error: 'registration failed' })
   }
 }
+
+// handling user login
+export const loginUser = async (req, res) => {
+  const { username, password } = req.body
+
+  try {
+    // checking if the username exists
+    const user = await User.findOne({ username })
+    if (!user) {
+      return res.status(404).json({ error: 'user not found' })
+    }
+
+    // comparing the entered password with the hashed password
+    const isMatch = await user.comparePassword(password)
+    if (!isMatch) {
+      return res.status(401).json({ error: 'invalid credentials' })
+    }
+
+    // login successful - issuing a token
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '3d' })
+
+    res.status(200).json({ message: 'login successful', token })
+  } catch (err) {
+    res.status(400).json({ error: 'login failed' })
+  }
+}
