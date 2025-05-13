@@ -1,5 +1,3 @@
-// controllers/journalControllers.js
-
 import JournalEntry from '../models/JournalEntry.js'
 
 // seed - optional starter entries
