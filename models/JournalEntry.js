@@ -15,6 +15,20 @@ const journalEntrySchema = new mongoose.Schema({
     type: String,
     enum: ['happy', 'sad', 'anxious', 'motivated', 'tired', 'neutral'],
     default: 'neutral'
+    },
+  imposterScore: {
+    type: Number,
+    min: 1,
+    max: 10,
+    default: 1
+  },
+  imposterPlan: {
+    type: String,
+    trim: true
+  },
+  isPrivate: {
+    type: Boolean,
+    default: false
   },
 
  user: {
@@ -23,6 +37,7 @@ const journalEntrySchema = new mongoose.Schema({
     required: true
  }
 
+ 
 }, {
   timestamps: true
 })

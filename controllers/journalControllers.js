@@ -17,7 +17,8 @@ const seedNotes = async (req, res) => {
 // index - show all journal entries for this user
 const getNotes = async (req, res) => {
   try {
-    const entries = await JournalEntry.find({ user: req.user._id }) 
+        const entries = await JournalEntry.find({ user: 'testuser' })
+    //const entries = await JournalEntry.find({ user: req.user._id }) 
     res.json(entries)
   } catch (err) {
     res.status(500).json({ error: 'could not fetch entries' })
@@ -52,8 +53,9 @@ const createNote = async (req, res) => {
       mood,
       imposterScore,
       imposterPlan,
-      isPrivate,           
-      user: req.user._id  
+      isPrivate,      
+      user: 'testuser'     
+      //user: req.user._id  
     })
 
     res.status(201).json(newEntry)
@@ -61,8 +63,6 @@ const createNote = async (req, res) => {
     res.status(400).json({ error: 'failed to create journal entry' })
   }
 }
-
-
 
 // update - update entry by id
 const updateNote = async (req, res) => {
