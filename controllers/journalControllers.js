@@ -44,12 +44,15 @@ const getNote = async (req, res) => {
 // create - new journal entry
 const createNote = async (req, res) => {
   try {
-    const { title, text, mood } = req.body
+    const { title, text, mood, imposterScore, imposterPlan, isPrivate } = req.body
 
     const newEntry = await JournalEntry.create({
       title,
       text,
       mood,
+      imposterScore,
+      imposterPlan,
+      isPrivate,           
       user: req.user._id  
     })
 
