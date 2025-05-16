@@ -97,10 +97,12 @@ Seed data available for development without login
 Testing is in progress for edge cases and updates
 
 ---
-
+## Screenshots - coming up 
+---
 ##Developer Reflection
 
 In the early stages of this project, I chose to implement JWT authentication to simulate a more realistic full-stack experience. I was a bit familiar of JWT but felt unclear about how to apply across frontend and backend. Through building this capstone, I had to debug token storage, middleware protection, and authorization header logic—especially while testing with Postman and switching to frontend Axios calls.
 Eventually, I realized the added complexity of token management was slowing down feature delivery. To balance realism with development speed, I created a testMode toggle that allows bypassing auth headers during local testing. This helped me move forward while keeping the original secure logic intact. I now understand how JWTs integrate with protected routes and how to gracefully build fallback logic when user auth isn’t the priority yet.
 
 This experience made me a stronger backend problem solver and helped me think more critically about developer UX on both sides of the stack.
+---
