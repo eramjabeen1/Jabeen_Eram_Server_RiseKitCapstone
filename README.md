@@ -12,3 +12,13 @@ The server handles user authentication, journal entry storage, and all backend C
 
 
 ---
+## Core Features
+RESTful API endpoints for:
+Creating, reading, updating, deleting journal entries
+Optional JWT authentication
+Token stored in localStorage on frontend
+Middleware for protected routes
+Seed route for starter test data
+testMode toggle in frontend allows bypassing auth for local testing
+
+---
