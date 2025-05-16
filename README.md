@@ -63,4 +63,11 @@ Login and get JWT token
 
 ---
 ## Setup Instructions
-1. Clone this repo: 
+1. Clone this repo: https://github.com/eramjabeen1/Jabeen_Eram_Server_RiseKitCapstone.git
+2. Install dependencies:npm install
+3. Create a .env file: PORT=5000 MONGO_URI=your-mongodb-atlas-url
+  JWT_SECRET=your-secret
+4. Start the server: npm run dev
+---
+
+## Database Schema
