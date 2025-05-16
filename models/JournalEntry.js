@@ -31,11 +31,17 @@ const journalEntrySchema = new mongoose.Schema({
     default: false
   },
 
- user: {
+ /*user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
     required: true
- }
+ }*/
+
+    user: {
+  type: String, // changed to String instead of ObjectId
+  default: 'testuser' // just to test CRUD without JWT
+}
+
 
  
 }, {
