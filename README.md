@@ -22,3 +22,45 @@ Seed route for starter test data
 testMode toggle in frontend allows bypassing auth for local testing
 
 ---
+## Tech Stack
+Node.js
+Express
+MongoDB (Atlas)
+Mongoose
+dotenv for environment configuration
+JWT for authentication (can be toggled off for test mode)
+
+---
+## API Endpoints
+GET
+/api/journal
+Get all journal entries for user
+
+POST
+/api/journal
+Create a new journal entry
+
+PUT
+/api/journal/:id
+Update an entry by ID
+
+DELETE
+/api/journal/:id
+Delete an entry by ID
+
+GET
+/api/journal/seed
+Add test entries (non-auth)
+
+Auth endpoints:
+POST
+/api/auth/register
+Register new use
+
+POST
+/api/auth/login
+Login and get JWT token
+
+---
+## Setup Instructions
+1. Clone this repo: 
