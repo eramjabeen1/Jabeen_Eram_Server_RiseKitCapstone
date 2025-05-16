@@ -105,4 +105,10 @@ In the early stages of this project, I chose to implement JWT authentication to 
 Eventually, I realized the added complexity of token management was slowing down feature delivery. To balance realism with development speed, I created a testMode toggle that allows bypassing auth headers during local testing. This helped me move forward while keeping the original secure logic intact. I now understand how JWTs integrate with protected routes and how to gracefully build fallback logic when user auth isn’t the priority yet.
 
 This experience made me a stronger backend problem solver and helped me think more critically about developer UX on both sides of the stack.
+
+---
+##Acknowledgements
+
+This server was developed for the Per Scholas Software Engineering Capstone. It supports RiseKit, a journal-focused wellness dashboard for developers. It is actively being built and improved for deployment and long term use.
+
 ---
