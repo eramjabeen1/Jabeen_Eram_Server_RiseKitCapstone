@@ -109,6 +109,6 @@ This experience made me a stronger backend problem solver and helped me think mo
 ---
 ##Acknowledgements
 
-This server was developed for the Per Scholas Software Engineering Capstone. It supports RiseKit, a journal-focused wellness dashboard for developers. It is actively being built and improved for deployment and long term use.
+This server was developed for the Per Scholas Software Engineering Capstone. It supports RiseKit, a journal focused wellness dashboard for developers. It is actively being built and improved for deployment and long term use.
 
 ---
